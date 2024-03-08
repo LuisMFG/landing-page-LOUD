@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Choney&display=swap&subset=latin-ext");
 
 * {
   margin: 0;
@@ -28,11 +30,12 @@ nav {
   max-width: 1120;
   margin: auto;
   padding: 1.5rem 10rem;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-height: 6rem;
+  overflow: hidden;
 }
 
 .logo {
@@ -42,6 +45,13 @@ nav {
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.logo img {
+  width: 12rem; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 0.5rem; /* Adiciona um espaçamento à direita, se desejado */
+  margin-top: 1rem;
 }
 
 .menu {
@@ -62,11 +72,11 @@ main {
 }
 
 .principal {
-  background: #181012;
+  background: #000000;
 }
 
 .hero {
-  background: #181012;
+  background: #000000;
 
   max-width: 1120px;
   height: 60vh;
@@ -91,14 +101,20 @@ main {
 }
 
 .destaque {
-  font-family: Epilogue;
-  font-size: 1rem;
+  font-family: Rubik;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.marrom {
-  color: #a45a49;
+.intro-loud {
+  font-family: Choney, sans-serif; /* Use a fonte personalizada ou fallback para sans-serif */
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.verde {
+  color: #08e600;
 }
 
 .amarelo {
@@ -112,14 +128,18 @@ main {
 }
 
 hr {
-  border-color: #000000;
+  border-color: #ffffff;
 }
 
 .subtitulo-h1 {
-  color: #c7bab3;
-  font-family: Inter;
+  color: #ffffff;
+  font-family: Rubik;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.noise {
+  color: #08e600;
 }
 
 .imagens-container {
@@ -179,21 +199,33 @@ button {
 }
 
 .noticias-card-container {
-  padding: 0rem 10rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 .noticias-card {
-  background: #241a1c;
+  background: #161916;
   padding: 2rem;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  flex-basis: 40rem;
+  flex-basis: calc(50% - 1rem);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .noticias-card {
+    flex-basis: calc(100% - 1rem);
+    margin-right: 0;
+  }
+}
+
+.noticias-card:nth-child(2n) {
+  margin-right: 0;
 }
 
 .noticias-card-cabecalho {
@@ -252,24 +284,24 @@ button {
 }
 
 footer {
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  background: #23181a;
+  background: #02c730;
 }
 
 .footer-copy {
-  font-family: Inter;
+  font-family: Rubik;
   font-size: 1rem;
   font-weight: 500;
-  color: #fff2e7;
+  color: #000000;
 }
 
 .autor {
-  font-family: Inter;
+  font-family: Rubik;
   font-size: 1rem;
   font-weight: 500;
-  color: rgba(255, 242, 231, 0.5);
+  color: #000000;
 }
