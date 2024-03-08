@@ -48,9 +48,9 @@ nav {
 }
 
 .logo img {
-  width: 12rem; /* Ajuste a largura conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-right: 0.5rem; /* Adiciona um espaçamento à direita, se desejado */
+  width: 12rem;
+  height: auto;
+  margin-right: 0.5rem;
   margin-top: 1rem;
 }
 
@@ -108,7 +108,7 @@ main {
 }
 
 .intro-loud {
-  font-family: Choney, sans-serif; /* Use a fonte personalizada ou fallback para sans-serif */
+  font-family: Choney, sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
 }
