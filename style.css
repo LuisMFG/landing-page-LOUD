@@ -14,7 +14,7 @@ body {
 }
 
 html {
-  font-family: Inter, sans-serif;
+  font-family: Rubik, sans-serif;
   font-weight: 500;
 }
 
@@ -163,9 +163,8 @@ hr {
 
 button {
   border: none;
-  padding: 1rem;
   border-radius: 0.5rem;
-  background: #a45a49;
+  background: #014526;
 }
 
 .noticias {
